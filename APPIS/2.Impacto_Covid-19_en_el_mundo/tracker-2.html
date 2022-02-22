@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- data table -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.11.4/datatables.min.css" />
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.11.4/datatables.min.js"></script>
+
+
+
+    <!-- iconos -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>Tracker-2</title>
+    <link rel="stylesheet" href="./css/tracker-1.css">
+    <link rel="stylesheet" href="./css/tracker-2.css">
+
+
+</head>
+
+<body class="grid-container">
+   
+    <!-- ======================================= -->
+    <!-- NAVBAR -->
+    <!-- ======================================= -->
+    <nav class="navbar">
+        <img class="virus" src="./images/nav-trakcer/coronavirus.png" width="40px" alt="">
+        <a href="./tracker-1.html"> <i class="fi fi-rr-chart-pie-alt"></i></a>
+        <i class="fi fi-rr-menu-burger active"></i>
+        <i class="fi fi-rr-apps"></i>
+        <i class="fi fi-rr-folder"></i>
+        <i class="fi fi-rr-layers"></i>
+        <i class="fi fi-rr-chat-arrow-grow"></i>
+        <i class="fi fi-rr-globe"></i>
+        <i class="fi fi-rr-comment-alt"></i>
+    </nav>
+
+    <!-- ===================================== -->
+    <!--  TOP 10 -->
+    <!-- ===================================== -->
+    <section class="country">
+        <h4>Covid-19 Tracker</h4>
+        <div id="totalCase">
+            <h6>Total Case</h6>
+            <p id="totalCaseData"></p>
+        </div>
+        <div id="activeCase">
+            <h6>Active Case</h6>
+            <p id="activeCaseData"></p>
+        </div>
+        <div id="recoveredCase">
+            <h6>Recovered Case</h6>
+            <p id="recoveredCaseData"></p>
+        </div>
+        <div id="deathsCase">
+            <h6>Deaths Case</h6>
+            <p id="deathsCaseData"></p>
+        </div>
+        <div class="flag">
+            <h6>Top 10 Country </h6>
+        </div>
+    </section>
+    <!-- ===================================== -->
+    <!--  TABLA PAISES-->
+    <!-- ===================================== -->
+    <section class="table">
+        <h2 class="subtitle">Ajax Data Table-Covid-19 Country Wise State </h2>
+        <hr>
+        <br>
+        <div class="tablaDatos">
+            <table id="table" >
+                <thead>
+                    <tr>
+                        <th>Flag</th>
+                        <th>Country</th>
+                        <th>Cases</th>
+                        <th>New Cases</th>
+                        <th>Deaths</th>
+                        <th>New Deaths</th>
+                        <th>Recovered</th>
+                        <th>Active</th>
+                        <th>Critical</th>
+                        <th>Tested</th>
+                    </tr>
+                </thead>
+                <tbody id="datos">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./js/tracker-1.js"></script>
+    <script src="./js/tracker-2.js"></script>
+
+
+</body>
+
+</html>

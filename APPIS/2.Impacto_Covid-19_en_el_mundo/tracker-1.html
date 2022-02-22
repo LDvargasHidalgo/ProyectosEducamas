@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- iconos -->
+        <link rel='stylesheet'
+                href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <title>Tracker-1</title>
+        <link rel="stylesheet" href="./css/tracker-1.css">
+</head>
+
+<body class="grid-container">
+        <!-- ===================================== -->
+        <!-- SELEC PAÍS -->
+        <!-- ===================================== -->
+        <header class="header">
+                <select name="select" id="listaPais">
+
+                </select>
+                <div id="ejemplo">
+
+                </div>
+
+        </header>
+        <!-- <div id="bandera"> 
+
+        </div> -->
+
+        <!-- ======================================= -->
+        <!-- NAVBAR -->
+        <!-- ======================================= -->
+        <nav class="navbar">
+                <img class="virus" src="./images/nav-trakcer/coronavirus.png" width="40px" alt="">
+                <i class="fi fi-rr-chart-pie-alt active"></i>
+                <a href="./tracker-2.html"><i class="fi fi-rr-menu-burger"></i></a>
+                <i class="fi fi-rr-apps"></i>
+                <i class="fi fi-rr-folder"></i>
+                <i class="fi fi-rr-layers"></i>
+                <i class="fi fi-rr-chat-arrow-grow"></i>
+                <i class="fi fi-rr-globe"></i>
+                <i class="fi fi-rr-comment-alt"></i>
+        </nav>
+
+        <!-- ===================================== -->
+        <!--  TOP 10 -->
+        <!-- ===================================== -->
+        <section class="country">
+                <h4>Covid-19 Tracker</h4>
+                <div id="totalCase">
+                        <h6>Total Case</h6>
+                        <p id="totalCaseData"></p>
+                </div>
+                <div id="activeCase">
+                        <h6>Active Case</h6>
+                        <p id="activeCaseData"></p>
+                </div>
+                <div id="recoveredCase">
+                        <h6>Recovered Case</h6>
+                        <p id="recoveredCaseData"></p>
+                </div>
+                <div id="deathsCase">
+                        <h6>Deaths Case</h6>
+                        <p id="deathsCaseData"></p>
+                </div>
+                <div class="flag">
+                        <h6>Top 10 Country </h6>
+                </div>
+        </section>
+
+
+
+
+        <!-- ===================================== -->
+        <!-- DATOS POR PAIS                                       central-->
+        <!-- ===================================== -->
+        <article class="main">
+                <div id="totalCase-2" class="one">
+                        <img class="image" src="./images/icons/covid-defult.svg" width="40px" alt="">
+                        <h6 class="subtitle">Total Cases</h6>
+                        <p class="parraf" id="totalCaseData-2"></p>
+                        <p class="parraf" id="totalCaseData-2"></p>
+                        <p class="parraf" id="totalCaseData-2"></p>
+
+                </div>
+                <div id="totalDeaths" class="one">
+                        <img class="image" src="./images/icons/covid-red.svg" width="40px" alt="">
+                        <h6 class="subtitle">Total Deaths</h6>
+
+                        <p class="parraf" id="totalDeathsData"></p>
+                      
+
+                </div>
+                <div id="totalRecovered" class="one">
+                        <img class="image" src="./images/icons/covid-blue.svg" width="40px" alt="">
+                        <h6 class="subtitle">Total Recovered</h6>
+
+                        <p class="parraf" id="totalRecoveredData"></p>
+
+                        <p class="parraf" id="totalRecoveredData"></p>
+
+                </div>
+                <div id="totalActive" class="one">
+                        <img class="image" src="./images/icons/covid-green.svg" width="40px" alt="">
+                        <h6 class="subtitle">Total Active</h6>
+
+                        <p class="parraf" id="totalActiveData"></p>
+                </div>
+                <div id="newCases" class="one">
+                        <img class="image" src="./images/icons/covid-orange.svg" width="40px" alt="">
+                        <h6 class="subtitle">New Cases</h6>
+
+                        <p class="parraf" id="NewCasessData"></p>
+                </div>
+                <div id="newDeaths" class="one">
+                        <img class="image" src="./images/icons/covid-red.svg" width="40px" alt="">
+                        <h6 class="subtitle">New Deaths</h6>
+
+                        <p class="parraf" id="NewDeatsData"></p>
+                </div>
+        </article>
+
+
+        <!-- ===================================== -->
+        <!-- SECCIÓN DATOS TOTALES -->
+        <!-- ===================================== -->
+        <aside class="sidebar">
+                <div id="totalConfirmed" class="one">
+                        <img class="image" src="./images/icons/covid-defult.svg" alt="">
+                        <h6 class="subtitle">Total Confirmed</h6>
+                        <p class="parraf" id="totalConfirmedData"></p>
+                </div>
+                <div id="totalRecovered-2" class="one">
+                        <img class="image" src="./images/icons/covid-green.svg" alt="">
+                        <h6 class="subtitle">Total Recovered</h6>
+                        <p class="parraf" id="totalRecoveredData-2"></p>
+                </div>
+                <div id="totalDeaths-2" class="one">
+                        <img class="image" src="./images/icons/covid-orange.svg" alt="">
+                        <h6 class="subtitle">Total Deaths </h6>
+                        <p class="parraf" id="totalDeathsData-2"></p>
+                </div>
+
+                <div id="newDeaths-2" class="one">
+                        <img class="image" src="./images/icons/covid-red.svg" alt="">
+                        <h6 class="subtitle">New Deaths </h6>
+                        <p class="parraf" id="NewDeathsData-2"></p>
+                </div>
+                <div id="help" class="one">
+                        <img class="image" src="./images/icons/telephone.svg" alt="">
+                        <h6 class="subtitle">Help Line No.</h6>
+                        <p class="parraf" id="totalDeathsData">198</p>
+                </div>
+        </aside>
+
+        <!-- ===================================== -->
+        <!-- FECHA-->
+        <!-- ===================================== -->
+        <section class="fecha">
+                <h5>Updated : </h5>
+                <p id="fecha"></p>
+        </section>
+
+        <section class="mapa">
+                <img src="./images/mapa.png" alt="">
+                
+        </section>
+
+
+        <script src="./js/tracker-1.js">
+        </script>
+
+        <script src="./listaPaisesConsulta.js"></script>
+
+
+</body>
+
+</html>

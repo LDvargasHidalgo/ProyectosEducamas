@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;/*controla el ancho de los contenedores y la maquetacion*/
+  
+}
+
+/*Style header*/
+nav {  
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;/*centrar verticalmente*/
+}
+header{
+    box-shadow: 0 0 8px rgb(216, 192, 192);
+    height: 4.0625rem;
+    width: 100%;
+    font-family: "mulish";
+    background:#ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+}
+
+header h1 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+nav ul {
+    display: flex;
+}
+nav ul li a {
+   color:#0d0d0e;
+    font-size: 1rem;
+    padding: .8rem 1rem;  
+    
+}
+.btn-feedback{
+    cursor: pointer;
+    color: #e4f1ed;
+    font-size: 0.9375rem;
+    padding: 0.625rem 1.875rem;
+    border-radius: 3.125rem;
+    background:#2937f0;  
+    height: 2.5rem;
+    margin-top: 1.25rem;
+    font-family: "mulish";
+}
+nav ul li a:hover{
+   color: #2937f0;
+}
+
+.btn-feedback:hover{
+    color: #e4f1ed;
+    background: #0d0d0e;
+}
+.active{
+    color:blue;
+    font-size: 1.125rem;
+}
+/*main*/
+
+.container-principal{
+    width: 80%;   
+    display: flex;
+    margin: 1.25rem 10%;
+}
+/*cONTENEDOR IZQUIERDO*/
+.container-left{
+    width: 50%;   
+    background: #ffff;
+    margin-top: 1.875rem;
+    padding: 1.875rem;
+    
+}
+
+.container-left > h2{
+   font-family: "newsreader";
+   font-size: 80px;
+   padding: 2.5rem 0.3125rem 0.9375rem 0;
+}
+
+.container-left > p{
+    font-family: "mulish";
+    font-size: 1.25rem;
+    padding: 1.25rem 0.3125rem 0.9375rem 0;
+    color: rgb(142, 160, 160);
+    justify-content: justify;
+ }
+
+ /*CONTENEDOR DERECHO*/
+
+ .container-right{
+     position: relative;
+ }
+ .cell > img {
+     width: 13.75rem;
+     height: auto;
+     position: absolute;
+     top: 4.375rem;
+     left:11.25rem ;
+     z-index: 3; /*para que tome la posicion por encima del video*/
+ }
+
+ .video > video {
+    width: 12.5rem;
+    height: auto;
+    position: absolute;
+    top: 4.375rem;
+    left:11.875rem;  
+    border-radius: 24px;
+    z-index: 2;
+ }
+
+ .circle{
+    width: 21.875rem;
+    height: 21.875rem;
+    background: linear-gradient(315deg, #fa34dc 0, #d132d1 25%, #a42ec1 50%, #7829ae 75%, #4e259d 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 7.5rem;
+    left:7.5rem;  
+    z-index:1;  
+}
+
+.x-1 {
+    color: #2937f0;
+     font-family: 'Dongle', sans-serif;
+     font-size: 1.875rem;
+     position: absolute;
+     top: 26.25rem;
+     left: 6.875rem;
+}
+
+.point{
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color:#2937f0;
+    border-radius: 50%;
+    position: absolute;
+    left: 31.25rem;
+    top: 9.375rem;
+}
+
+/*Pag-2*/
+
+/*fondo*/
+.background-image > img{
+    margin-top: 1.875rem;
+    width: 100%;
+    height: 36.875rem;
+    z-index: 1;
+}
+
+.page-2{
+    position: relative;
+    margin-top: 5rem;
+}
+
+.container-ahead{
+    
+ position: absolute;
+ top:13.75rem; 
+ width: 40.625rem;
+ height: auto;
+ margin-left: 4.375rem;
+}
+
+.container-ahead > p{
+    font-size: 5rem;
+    font-family: newsreader;
+    color: #ffffff;
+    position: absolute;
+    z-index: 3;
+    
+}
+
+.container-ahead > a{
+    font-family: mulish;   
+    color: #ffffff;
+    background: transparent;
+    border: 0.0625rem solid white;
+    position: absolute;
+    z-index: 3;
+    top: 15.3125rem;
+    
+
+}
+
+.transparent{
+    position: absolute;
+    background: rgba(12, 0, 0, 0.5);
+    width: 100%;
+    height: 36.875rem;
+    top: 1.9375rem;   
+}
+
+
+/*PAGINA 3*/
+
+.container-principal-3{
+    display: flex;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+/*CONTENEDOR DERECHO*/
+.container-right-3{
+    width: 90%;
+    display: flex; 
+    flex-wrap: wrap;    
+    text-align: center;
+    margin-top: 1.875rem;
+    margin-right: 5.625rem;
+}
+
+/*ICONOS*/
+.skill > div > i{
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#463AE3, #872BDC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+
+.container-right-3 > div{
+ height: 12.5rem;
+ width: 40%;
+ margin-left: 3.125rem;
+ margin-top: 1.875rem;
+}
+
+.container-right-3 > div > h2{
+    font-size: 1.875rem;
+    margin-bottom: 0.625rem;
+    font-family: kanit;
+}
+
+.container-right-3 > div > p{
+    font-family: mulish;
+    color: #56565f;
+}
+
+/*CONTENEDOR IZQUIERDO*/
+.container-left-3{
+    width: 50%;   
+   
+    position: relative;
+}
+
+/*CELULAR PAG-3*/
+.cell-3 > img{
+    width: 13.75rem;
+    height: auto;
+    position: absolute;
+    top: 3.125rem;
+    left:15rem ;
+    z-index: 3;
+}
+.video-3 > video {
+    width: 12.5rem;
+    height: auto;
+    position: absolute;
+    top: 3.125rem;
+    left:15.625rem;  
+    border-radius: 1.5rem;
+    z-index: 2;
+ }
+ .circle-3{
+    width: 15.625rem;
+    height: 15.625rem;
+    background: linear-gradient(315deg, #fa34dc 0, #d132d1 25%, #a42ec1 50%, #7829ae 75%, #4e259d 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 9.375rem;
+    left:9.375rem;  
+    z-index:1;  
+}
+
+.x-3{
+    color: #2937f0;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.875rem;
+    position: absolute;
+    top: 3.125rem;
+    left: 30rem; 
+}
+
+.point-3{
+    width: 0.8125rem;
+    height: 0.8125rem;
+    background-color:#2937f0;
+    border-radius: 50%;
+    position: absolute;
+    left: 12.1875rem;
+    top: 26.875rem;
+}
+
+footer{
+    width: 100%;
+    height: 8.125rem;
+    background-color: #0d0d0e;
+    margin-top: 6.25rem;
+    color: rgb(151, 145, 145);
+    text-align: center;
+    font-family: mulish;
+    font-size: 0.8125rem;
+    padding-top: 3%;
+}
+
+

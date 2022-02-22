@@ -1,0 +1,120 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 71px;
+    height: 100vh;
+    width: 80%;
+    grid-template-areas:
+        "header"
+        "title"
+        "xontenedor";
+    justify-items: center;
+}
+
+.tittle {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+   text-align: center;
+}
+
+.tittle h1 {
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 0 0 5px rgb(226, 113, 7),  0 0 15px rgb(226, 113, 7),  0 0 30px rgb(226, 113, 7), 0 0 5px rgb(226, 113, 7);
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+#contenedor {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    grid-area: xilo;
+    font-size: 2.8vw;
+    gap: 0.4rem;
+}
+
+.note {
+    width: 2em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+
+.note:nth-child(1) {
+    background: #02b65e;
+    height: 10em;
+}
+
+.note:nth-child(2) {
+    background: #f0d20e;
+    height: 9em;
+}
+
+.note:nth-child(3) {
+    background: #d04559;
+    height: 8em;
+}
+
+.note:nth-child(4) {
+    background: #e28c12;
+    height: 7em;
+}
+
+.note:nth-child(5) {
+    background: #8e83c8;
+    height: 6em;
+}
+
+.note:nth-child(6) {
+    background: #0285d4;
+    height: 5em;
+}
+
+.note:nth-child(7) {
+    background: #fdc1c0;
+    height: 4em;
+}
+
+.note:nth-child(8) {
+    background: #be3c22;
+    height: 3em;
+}
+
+.white_bold {
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.note.active {
+    box-shadow: 5px 3px 15px 8px #e4ff4a,5px 3px 15px 8px #e4ff4a;
+}
+
+
+/* ---------------------Medias---------------------*/
+
+
+@media screen and (min-width: 1133px) {
+    .container {
+        grid-template-columns: 71px 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            ". container__main"
+            ". main__title"
+            ". xilo";
+        width: 90%;
+        padding-top: 5rem;
+    }
+}

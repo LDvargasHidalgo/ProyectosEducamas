@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root {
+    --azul: #3639ae;
+    --background: #ffff;
+    --background-blue: #f2f8f8;
+    --verde: #c0d467;
+    --popins: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    background: var(--background);
+
+
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    font-family: var(--popins);
+
+}
+
+.grid-container>* {
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*==============================
+=======BARRA DE NAVEGACIÓN====== */
+
+.navbar {
+    grid-area: navbar;
+    background-color: var(--background-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.virus {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.navbar>i {
+    font-size: 1.5rem;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.navbar>i:hover {
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--azul);
+    padding: 10px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+.navbar>a {
+    font-size: 1.5rem;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.navbar>a:hover {
+    font-size: 25px;
+    color: white;
+    background-color: var(--azul);
+    padding: 10px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+.active {
+    font-size: 25px;
+    color: white !important;
+    background-color: var(--azul);
+    padding: 10px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+/*==============================
+=========MAPA =============== */
+.mapa {
+    grid-area: mapa;
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.mapa>img {
+    width: 25rem;
+}
+
+/*==============================
+=========FECHA =============== */
+.fecha {
+    grid-area: fecha;
+    display: flex;
+    justify-content: space-around;
+}
+
+#fecha {
+    font-size: 15px;
+}
+
+/*==============================
+=========TOP 10 =============== */
+.country {
+    grid-area: country;
+    background-color: var(--background);
+    display: none;
+    overflow: auto;
+}
+
+
+
+#totalCase {
+    width: 95%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 2px;
+    background: #fcf1f1;
+    margin-bottom: 15px;
+}
+
+#totalCase>h6 {
+    color: var(--azul);
+}
+
+#totalCase>p {
+    font-size: 20px;
+    color: red !important;
+}
+
+#totalCase:hover {
+    border: 2px solid red;
+
+}
+
+#activeCase {
+    width: 95%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 2px;
+    background: #fff3e9;
+    margin-bottom: 15px;
+}
+
+#activeCase>h6 {
+    color: var(--azul);
+}
+
+#activeCase>p {
+    font-size: 20px;
+    color: #f87e2d;
+}
+
+#activeCase:hover {
+    border: 2px solid #f87e2d;
+}
+
+#recoveredCase {
+    width: 95%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    ;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 2px;
+    background: var(--background-blue);
+    margin-bottom: 15px;
+}
+
+#recoveredCase>h6 {
+    color: var(--azul);
+}
+
+#recoveredCase>p {
+    color: var(--verde);
+    font-size: 20px;
+}
+
+#recoveredCase:hover {
+    border: 2px solid var(--verde);
+}
+
+#deathsCase {
+    width: 95%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.6rem;
+    border-radius: 2px;
+    background: var(--background-blue);
+    margin-bottom: 0.9rem;
+}
+
+#deathsCase>h6 {
+    color: var(--azul);
+}
+
+#deathsCase>p {
+    color: var(--azul);
+    font-size: 1.25rem;
+}
+
+#deathsCase:hover {
+    border: 2px solid var(--azul);
+}
+
+#top-10 {
+    display: flex;
+    justify-content: start;
+}
+
+#top-10>h6 {
+    color: var(--azul);
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+/* Banderas */
+.flag {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container_flag {
+    box-shadow: 1px 1px 1px 1px rgb(246, 246, 250);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.container_flag:hover {
+    padding: 2px;
+    box-shadow: 2px 2px 2px 2px rgb(185, 185, 189);
+}
+
+.flag>h6 {
+    font-size: 15px;
+    text-align: start;
+    padding: 15px;
+    color: var(--azul);
+}
+
+
+
+.second_div {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.second_div>img {
+    width: 40px;
+    margin: 5px;
+}
+
+.pais {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.casos {
+    font-size: 15px;
+    margin: 12px;
+}
+
+/*==============================
+====SELECCIONAR PAÍS============ */
+.header {
+    grid-area: header;
+    background-color: var(--background-blue);
+    display: flex;
+    background: var(--background-blue);
+}
+
+.header>select {
+    height: 2rem;
+    width: 40%;
+    padding: 0.3rem;
+    font-family: var(--popins);
+    color: rgb(85, 83, 83);
+    border-radius: 5px;
+    background: var(--background);
+}
+
+/*==============================
+====DATOS POR PAÍS============ */
+.main {
+    grid-area: main;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    padding-top: 30px;
+}
+
+.main>div .image {
+    grid-area: image;
+    width: 110px;
+    margin-top: -30px;
+    margin-left: -28px;
+    opacity: 0.1;
+}
+
+/* .main>div.image:hover {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 5s linear infinite;
+} */
+
+.one:hover img {
+    animation: one 4s infinite linear;
+}
+
+@keyframes one {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+
+    ;
+}
+
+.main>div .subtitle {
+    grid-area: subtitle;
+    padding-top: 10px;
+}
+
+.main>div .parraf {
+    grid-area: parraf;
+}
+
+.main>div {
+    width: 45%;
+    height: 30%;
+    border-radius: 5px;
+    background: var(--background);
+    padding: 15px 10px;
+    box-shadow: 2px 2px 2px 2px rgb(241, 241, 248);
+    overflow: hidden;
+    text-align: start;
+    display: grid;
+    grid-template:
+        "subtitle image"50% "parraf image"auto/ 150px auto;
+}
+
+.main>div:hover {
+    margin-top: -10px;
+}
+
+.main>div>p {
+    font-size: 23px;
+}
+
+#totalCase-2>p {
+    color: var(--azul);
+}
+
+#totalDeaths>p {
+    color: #ff0000;
+}
+
+#totalRecovered>p {
+    color: var(--verde);
+}
+
+#totalActive>p {
+    color: #125dbe;
+}
+
+#newCases>p {
+    color: #ff4500;
+}
+
+#newDeaths>p {
+    color: #7a0d0d;
+}
+
+/*==============================
+====SECCIÓN DATOS TOTALES======= */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #fdcfcf;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 0 50px;
+    text-align: start;
+    background: var(--background-blue);
+}
+
+.sidebar>div .image {
+    grid-area: image;
+    width: 35px;
+}
+
+.sidebar>div .image:hover {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 5s linear infinite;
+}
+
+.sidebar>div .subtitle {
+    grid-area: subtitle;
+}
+
+.sidebar>div .parraf {
+    grid-area: parraf;
+}
+
+.sidebar>div {
+    width: 40%;
+    height: 50%;
+    border-radius: 5px;
+    background: var(--background);
+    color: var(--azul);
+    box-shadow: 2px 2px 2px 2px rgb(241, 241, 248);
+    align-items: center;
+    display: grid;
+    grid-template:
+        "image subtitle"50% "image parraf"auto/ 24% auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template:
+        "navbar  header"50px "navbar  fecha"50px "navbar  main"300px "navbar main"auto "navbar mapa"200px "navbar sidebar"100px "navbar  sidebar"auto/ 12% 89%;
+}
+
+/* cuando la pantalla sea menor a 375px */
+@media(max-width: 375px) {
+    .header {
+        width: 85%;
+    }
+
+    .fecha {
+        width: 85%;
+    }
+
+    .main {
+        justify-content: space-between;
+        width: 87%;
+    }
+
+    .main>div>p {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .main>div>h6 {
+        font-size: 10px;
+    }
+
+    .main>div .image {
+        grid-area: image;
+        width: 85px;
+        margin-left: -75px;
+        margin-top: -10px;
+    }
+
+    .mapa>img {
+
+        width: 250px;
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .sidebar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1px 3px;
+        width: 85%;
+    }
+
+    .sidebar>div {
+        width: 120px;
+        height: 50px;
+    }
+
+    .sidebar>div>h6 {
+        font-size: 9px;
+        padding: 0 5px;
+    }
+
+    .sidebar>div>p {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template:
+            "navbar  header"50px "navbar  fecha"30px "navbar  main"300px "navbar mapa"200px "navbar sidebar"50px "navbar  sidebar"auto/ 12% 100%;
+    }
+
+    .main>div {
+        padding-top: 1px;
+        width: 140px;
+        height: 60px;
+    }
+
+}
+
+/* Pantallas mas grandes de 900px */
+
+@media (min-width: 900px) {
+    .country {
+        display: inline
+    }
+
+    .grid-container {
+        grid-template:
+            "navbar country  header fecha"3rem "navbar country main mapa"3rem "navbar country main mapa"30rem "navbar country sidebar sidebar"250px/ 80px 270px 500px auto;
+    }
+}
