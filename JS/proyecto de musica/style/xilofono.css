@@ -11,18 +11,17 @@
     justify-items: center;
 }
 
-.tittle {
-    color: white;
-    width: 100%;
-    margin: 0 auto;
-   text-align: center;
+.tittle{
+    width: 100vh;
 }
 
 .tittle h1 {
-    margin: 0;
+    align-items: center;
     font-size: 50px;
     text-shadow: 0 0 5px rgb(226, 113, 7),  0 0 15px rgb(226, 113, 7),  0 0 30px rgb(226, 113, 7), 0 0 5px rgb(226, 113, 7);
     font-family: 'Dancing Script', cursive;
+    padding-top: 30px;
+
     
 }
 
